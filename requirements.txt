@@ -1,6 +1,7 @@
 asgiref
 autopep8
 django==3.1.6
+Pillow
 pycodestyle
 pytz
 sqlparse
