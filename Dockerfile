@@ -1,7 +1,7 @@
 FROM python:3.6
 
 COPY manage.py gunicorn-cfg.py requirements.txt .env ./
-COPY app app
+COPY train_management train_management
 COPY authentication authentication
 COPY core core
 
