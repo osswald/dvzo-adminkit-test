@@ -1,0 +1,91 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Tagesplanung {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<main class="content">
+    <div class="container-fluid p-0">
+
+        <h1 class="h3 mb-3">Tagesplanung</h1>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <a href="day-planning-detail.html">
+                                <button type="button" class="btn btn-primary">
+                                <i class="align-middle" data-feather="file-plus"></i>&nbsp; Neuer Tag</button>
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Bezeichnung</th>
+                                <th scope="col">Datum</th>
+                                <th scope="col">Typ</th>
+                                <th scope="col">Züge</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Fahrtensonntag 11. Mai 2021</td>
+                                <td>11.05.2021</td>
+                                <td>Fahrtensonntag</td>
+                                <td>
+                                    <span class="badge bg-primary">Lok 2</span>
+                                    <span class="badge bg-dark">FZ202</span>
+                                    <span class="badge bg-secondary">BC123</span>
+                                    <span class="badge bg-secondary">C22</span>
+                                    <span class="badge bg-secondary">C58</span>
+                                    <span class="badge bg-danger">WR151</span>
+                                    <br>
+                                    <span class="badge bg-primary">Lok 9</span>
+                                    <span class="badge bg-dark">F222</span>
+                                    <span class="badge bg-secondary">C405</span>
+                                    <span class="badge bg-secondary">C259</span>
+                                    <span class="badge bg-secondary">C8192</span>
+                                    <span class="badge bg-danger">WR109</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fahrtensonntag 23. Mai 2021</td>
+                                <td>23.05.2021</td>
+                                <td>Fahrtensonntag</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Hochzeit Müller</td>
+                                <td>22.05.2021</td>
+                                <td>Extrafahrt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Überfuhr HOWA BMA-UST</td>
+                                <td>01.06.2021</td>
+                                <td>Andere</td>
+                                <td>
+                                    <span class="badge bg-primary">Tem 2</span>
+                                    <span class="badge bg-secondary">HOWA</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
